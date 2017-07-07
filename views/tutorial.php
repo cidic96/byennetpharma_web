@@ -51,7 +51,7 @@
     <div class="collapse navbar-collapse">
 		<ul  class="nav navbar-nav navbar-right">
 			<li>
-				<a href="index.html">Back to Kit</a>
+				<a href="index.php">Back to Kit</a>
 			</li>
 			<li>
                 <a href="https://github.com/timcreative/material-kit/issues">Have an issue?</a>
@@ -98,10 +98,10 @@
 	                	The <b>Material Kit</b> is built on top of Bootstrap 3, so you can safely use it on your existing or new Bootstrap project. No line of code from Bootstrap 3 was changed, so you don't have to worry about undesired effects in your work.
 	                </p>
 	                <p>
-	                    We provide all the necessary CSS resources. To get going, just include <code>assets/css/material-kit.css</code> in your HTML template. Your project will get the new look.
+	                    We provide all the necessary CSS resources. To get going, just include <code>assets/css/material-kit.css</code> in your php template. Your project will get the new look.
 	                </p>
 	                <p>
-	                    The easiest way to start is to use our <a href="template.html" target="_blank">start-up template</a> where all the files are already included and ready to use.
+	                    The easiest way to start is to use our <a href="template.php" target="_blank">start-up template</a> where all the files are already included and ready to use.
 	                </p>
 	                </div>
 	            </div>
@@ -135,11 +135,11 @@
 						-----material-kit<br>
 						-----material-kit.scss<br>
 						--examples<br>
-	                    --components-documentation.html<br>
+	                    --components-documentation.php<br>
 						--Creative Tim License.pdf
-					    --index.html<br>
-	                    --template.html<br>
-	                    --tutorial.html<br>
+					    --index.php<br>
+	                    --template.php<br>
+	                    --tutorial.php<br>
 	                   </p>
 	                </div>
 	            </div>
@@ -196,7 +196,7 @@
 						</ul>
 	                    </p>
 	                    <p>
-	                        For more details regarding the components, go to our <a href="components-documentation.html">Components Page</a>.
+	                        For more details regarding the components, go to our <a href="components-documentation.php">Components Page</a>.
 	                    </p>
 	                </div>
 	            </div>

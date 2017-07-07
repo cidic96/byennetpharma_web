@@ -35,7 +35,7 @@
 		                                <span class="icon-bar"></span>
 		                                <span class="icon-bar"></span>
 	                            	</button>
-	                            	<a class="navbar-brand" href="index.html"><img style="width:200px;max-width: 50% ; margin-top: -15px;" src="assets/img/logo.png"></a>
+	                            	<a class="navbar-brand" href="index.php"><img style="width:200px;max-width: 50% ; margin-top: -15px;" src="assets/img/logo.png"></a>
 	                            </div>
 
 	                            <div class="collapse navbar-collapse" id="example-navbar-icons">
@@ -45,13 +45,13 @@
 											<a href="#pablo"><i class="material-icons">colorize</i> Products </a>
 										</li>
 	                                	<li class="dropdown">
-	                                		<a href="wellness.html" class="dropdown-toggle" data-toggle="dropdown"><i class="material-icons">healing</i> Health
+	                                		<a href="wellness.php" class="dropdown-toggle" data-toggle="dropdown"><i class="material-icons">healing</i> Health
 												
 												<b class="caret"></b>
 											</a>
 	                                    	<ul class="dropdown-menu dropdown-menu-right">
-	                                        	<li><a href="wellness.html" class="dropdown-toggle">Wellness</a>
-		                                        <li><a href="illness.html">Illness</a></li>
+	                                        	<li><a href="wellness.php" class="dropdown-toggle">Wellness</a>
+		                                        <li><a href="illness.php">Illness</a></li>
 		                                    </ul>
 	                                	</li>
 	                                	<li class="dropdown">
@@ -61,14 +61,14 @@
 											</a>
 	                                    	<ul class="dropdown-menu dropdown-menu-right">
 	                                        	<li class="dropdown-header">Health Care Provider</li>
-	                                        	<li><a href="#">Request Information</a></li>
+	                                        	<li><a href="request.php">Request Information</a></li>
 		                                        <li><a href="#">Scientific Literature</a></li>
 		                                        <li><a href="#">Patient Education Support here</a></li>
 		                                        <li><a href="#">Medicines Availability</a></li>
 		                                        <li class="divider"></li>
 		                                        <li class="dropdown-header">Wellness Club</li>
-		                                        <li><a href="wellnessclub.html">What is Wellness Club?</a></li>
-		                                        <li><a href="wellnessclub.html#locate">Wellness Club Locator</a></li>
+		                                        <li><a href="wellnessclub.php">What is Wellness Club?</a></li>
+		                                        <li><a href="wellnessclub.php#locate">Wellness Club Locator</a></li>
 		                                    </ul>
 	                                	</li>
 	                                	<li class="dropdown">
@@ -87,12 +87,28 @@
 	                                	<li>
 											<a href="#pablo"><i class="material-icons">phone</i> Contact Us </a>
 										</li>
-										<li>
-											<a href=""><i class="material-icons">fingerprint</i> Login </a>
-											</li>
-										<li>
-											<a class="btn btn-success" href="">Sign Up </a>
-										</li>
+										<?php
+              // ... ask if we are logged in here:
+              if ($login->isLoggedIn() == true) { ?>
+
+              	<li>
+					<a href=""> <?php echo $_SESSION['firstName']." ".$_SESSION['lastName'];?> </a>
+					</li>
+				<li>
+					<a class="btn btn-success" href="login.php?logout">Log out </a>
+				</li>
+
+                
+              <?php } else { ?>
+              <li>
+					<a href="login.php"><i class="material-icons">fingerprint</i> Login </a>
+					</li>
+				<li>
+					<a class="btn btn-success" href="register.php">Sign Up </a>
+				</li>
+                
+             <?php     }
+                ?>
 	                            	</ul>
 	                            </div>
 	</div>
