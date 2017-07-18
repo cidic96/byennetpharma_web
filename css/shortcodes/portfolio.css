@@ -20,7 +20,10 @@
     height: auto;
     display: block;
 }
-
+.portfolio .portfolio-item-slider .thumb img{
+    width: 100%;
+    height: auto;
+}
 .portfolio-hover {
     position: absolute;
     top: 0;

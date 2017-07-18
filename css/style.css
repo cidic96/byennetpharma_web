@@ -263,6 +263,7 @@ pre {
     column-count: 3;
 }
 
+
 .column-four {
     -webkit-column-count: 4;
     -moz-column-count: 4;
@@ -1302,7 +1303,14 @@ header.nav-block-left {
     height: 100vh;
     background-position: 50% 50%;
 }
-
+.parallax-about {
+    background-image: url("../img/demo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 64vh;
+    background-position: 50% 50%;
+}
 .parallax-inner {
     background-image: url("../img/demo.jpg");
     background-size: cover;
@@ -2547,7 +2555,17 @@ header.nav-block-left {
     width: 100%;
     z-index: 200;
 }
-
+.vertical-align .container-mid-about{
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 200;
+}
 .light-box,
 .dark-box {
     padding: 70px 50px;
@@ -4175,4 +4193,42 @@ address p {
 
 .gray-bg-alt {
     background: #e8e8e8;
+}
+
+
+/*slider .css*/
+#owl-demo .slider-img{
+    width: 340px;
+    height: 220px;
+}
+#owl-demo .item{
+  margin: 10px;
+}
+#owl-demo-1 .slider-img{
+    width: 340px;
+    height: 220px;
+}
+#owl-demo-1 .item{
+  margin: 10px;
+}
+#owl-demo-2 .slider-img{
+    width: 340px;
+    height: 220px;
+}
+#owl-demo-2 .item{
+  margin: 10px;
+}
+#owl-demo-3 .slider-img{
+    width: 340px;
+    height: 220px;
+}
+#owl-demo-3 .item{
+  margin: 10px;
+}
+#owl-demo-4 .slider-img{
+    width: 340px;
+    height: 220px;
+}
+#owl-demo-4 .item{
+  margin: 10px;
 }
